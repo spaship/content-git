@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/OpenHybridWeb/core-staticcontent#readme",
   "dependencies": {
-    "simple-git": "^2.31.0",
+    "simple-git": "^2.45.1",
     "yaml": "^1.10.0"
   }
 }
