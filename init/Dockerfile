@@ -1,7 +1,7 @@
 # To build docker image:
 # docker build -t spaship/content-git-init .
 #
-FROM node:16 AS stage1
+FROM node:19 AS stage1
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -22,7 +22,7 @@ CMD [ "node", "init-content.js" ]
 
 
 # prod stage
-FROM node:16-slim
+FROM node:19-slim
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
